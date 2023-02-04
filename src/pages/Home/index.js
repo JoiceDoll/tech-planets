@@ -39,7 +39,7 @@ function Home() {
         <img src={CapaImage} alt="CapaImage" />
         <Content>
           <span>
-            <h1>Hello World</h1>
+            <h1>Hello World!</h1>
           </span>
           <p>
             Nós somos a Tech Planet <br /> e sua jornada em tecnologia começa
