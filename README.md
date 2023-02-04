@@ -1,2 +1,1 @@
-# tech-planets
-For learning React.js
+#282c34
