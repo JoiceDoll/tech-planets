@@ -15,6 +15,8 @@ import {
   ImageMap,
   FourthContent,
   Courses,
+  FixedPositionNav,
+  StyleButton,
 } from "./styles";
 import MapImage from "../../images/champion.jpg";
 import CapaImage from "../../images/capa.png";
@@ -22,34 +24,39 @@ import CapaImage from "../../images/capa.png";
 function Home() {
   return (
     <>
-      <Navbar bg="dark" variant="dark" id="navId">
-        <Container>
-          <Navbar.Brand href="#home" Style={"color:#06f3af; font-weight:bold;"}>
-            Tech Planet
-          </Navbar.Brand>
-          <Nav className="me-auto">
-            <Nav.Link href="#FirstDiv">Home</Nav.Link>
-            <Nav.Link href="#features">Sobre</Nav.Link>
-            <Nav.Link href="#pricing">Cursos</Nav.Link>
-          </Nav>
-        </Container>
-      </Navbar>
-
-      <Div id="FirstDiv">
+      <FixedPositionNav>
+        <Navbar bg="dark" variant="dark" id="navId">
+          <Container>
+            <Navbar.Brand
+              href="#home"
+              Style={"color:#06f3af; font-weight:bold;"}
+            >
+              Tech Planet
+            </Navbar.Brand>
+            <Nav className="me-auto">
+              <Nav.Link href="#Home">Home</Nav.Link>
+              <Nav.Link href="#Sobre">Sobre</Nav.Link>
+              <Nav.Link href="#Cursos">Cursos</Nav.Link>
+            </Nav>
+          </Container>
+        </Navbar>
+      </FixedPositionNav>
+      <Div id="Home">
         <img src={CapaImage} alt="CapaImage" />
         <Content>
           <span>
             <h1>Hello World!</h1>
           </span>
+          <br />
           <p>
             Nós somos a Tech Planet <br /> e sua jornada em tecnologia começa
             aqui.
           </p>
         </Content>
       </Div>
-      <SecondContent>
+      <SecondContent id="Sobre">
         <p>
-          Somos uma plataforma de multiplos ensinamentos em técnologias, e já
+          Somos uma plataforma de multiplos ensinamentos em tecnologias, e já
           formamos mais de <span>1.000</span> alunos.
         </p>
       </SecondContent>
@@ -65,20 +72,23 @@ function Home() {
           <img src={MapImage} alt="Map" />
         </ImageMap>
       </ThirdContent>
-      <FourthContent>
+      <FourthContent id="Cursos">
         <Courses>
           <h1>Nossos cursos</h1>
+          <p>Seja Tech</p>
         </Courses>
         <Link to="/cursos">
-          <Button
-            Style={
-              "background:#06f3af; border:inherit; color:#000; font-weight:bold; width:20%; margin-top:15%;margin-left:40%;"
-            }
-            size="lg"
-            active
-          >
-            Cursos
-          </Button>
+          <StyleButton>
+            <Button
+              Style={
+                "background:#06f3af; border:inherit; color:#000; font-weight:bold; width:20%; margin-top:15%;margin-left:40%;"
+              }
+              size="lg"
+              active
+            >
+              Cursos
+            </Button>
+          </StyleButton>
         </Link>
       </FourthContent>
     </>

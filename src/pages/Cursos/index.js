@@ -2,7 +2,7 @@ import React from "react";
 import Container from "react-bootstrap/Container";
 import Navbar from "react-bootstrap/Navbar";
 import Button from "react-bootstrap/Button";
-import { Link } from 'react-router-dom'
+import { Link } from "react-router-dom";
 import {
   ContainerCourses,
   ImgDeveloper,
@@ -23,7 +23,14 @@ function Cursos() {
     <>
       <Navbar bg="dark" variant="dark">
         <Container>
-          <Navbar.Brand href="#home">Tech Planets</Navbar.Brand>
+          <Link Style={"text-decoration:none"} to="/">
+            <Navbar.Brand
+              href="#home"
+              Style={"color:#06f3af; font-weight:bold; "}
+            >
+              Tech Planets
+            </Navbar.Brand>
+          </Link>
         </Container>
       </Navbar>
       <ContainerCourses>
@@ -36,9 +43,9 @@ function Cursos() {
             Domine as principais linguagens Back-end e Front-end do mercado.
           </p>
           <Link to="/developer">
-          <Button variant="secondary" size="lg" active>
-            Mais informações
-          </Button>
+            <Button variant="secondary" size="lg" active>
+              Mais informações
+            </Button>
           </Link>
         </DevContent>
       </ContainerCourses>
@@ -50,9 +57,9 @@ function Cursos() {
           <h1>Segurança da informação</h1>
           <p>Aprenda as principais técnicas de um Hacker Ético.</p>
           <Link to="/security">
-          <Button  variant="secondary" size="lg" active>
-            Mais informações
-          </Button>
+            <Button variant="secondary" size="lg" active>
+              Mais informações
+            </Button>
           </Link>
         </SecuryContent>
       </ContainerSecury>
@@ -67,9 +74,9 @@ function Cursos() {
             dados.
           </p>
           <Link to="/database">
-          <Button variant="secondary" size="lg" active>
-            Mais informações
-          </Button>
+            <Button variant="secondary" size="lg" active>
+              Mais informações
+            </Button>
           </Link>
         </DataContent>
       </ContainerDatabase>

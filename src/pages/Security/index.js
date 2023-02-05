@@ -1,13 +1,13 @@
 import React from "react";
-
 import { Navbar, Container } from "react-bootstrap";
 import ImageSecurity from "../../images/hackman.jpg";
-
+import { Link } from "react-router-dom";
 import {
   Security,
   SecurityImage,
   SecurityContent,
   SecurityIcons,
+  SecuryIcon
 } from "./styled";
 import { SiVirtualbox, SiWireshark, SiKalilinux } from "react-icons/si";
 import { GiHydra } from "react-icons/gi";
@@ -17,9 +17,14 @@ function SecurityPage() {
     <>
       <Navbar bg="dark" variant="dark">
         <Container>
-          <Navbar.Brand href="#home" Style={"color:#06f3af; font-weight:bold"}>
-            Tech Planets
-          </Navbar.Brand>
+          <Link Style={"text-decoration:none"} to="/">
+            <Navbar.Brand
+              href="#home"
+              Style={"color:#06f3af; font-weight:bold"}
+            >
+              Tech Planets
+            </Navbar.Brand>
+          </Link>
         </Container>
       </Navbar>
 
@@ -32,10 +37,22 @@ function SecurityPage() {
             <span>Segurança da informação</span> Hacker Ético
           </h1>
           <SecurityIcons>
-            <SiVirtualbox size={70} />
-            <SiWireshark size={70} />
-            <GiHydra size={70} />
-            <SiKalilinux size={70} />
+            <SecuryIcon>
+              {" "}
+              <SiVirtualbox size={70} />
+            </SecuryIcon>
+            <SecuryIcon>
+              {" "}
+              <SiWireshark size={70} />
+            </SecuryIcon>
+            <SecuryIcon>
+              {" "}
+              <GiHydra size={70} />
+            </SecuryIcon>
+            <SecuryIcon>
+              {" "}
+              <SiKalilinux size={70} />
+            </SecuryIcon>
           </SecurityIcons>
         </SecurityContent>
       </Security>

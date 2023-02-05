@@ -34,10 +34,14 @@ export const FrontContent = styled.div`
 `;
 
 export const Icon = styled.span`
-  color: #ccc;
-
   &:hover {
-    color: #fff;
+    color: #ccc;
+  }
+`;
+
+export const BackIcon = styled.span`
+  &:hover {
+    color: #ccc;
   }
 `;
 

@@ -18,7 +18,7 @@ export const DatabaseImage = styled.div`
     height: 100%;
     border-radius: 50%;
   }
-`
+`;
 
 export const DatabaseIcons = styled.div`
   display: flex;
@@ -38,5 +38,11 @@ export const DatabaseContent = styled.div`
 
   span {
     color: #42d3ff;
+  }
+`;
+
+export const DataIcon = styled.span`
+  &:hover {
+    color: #ccc;
   }
 `;

@@ -1,6 +1,7 @@
 import React from "react";
 import Container from "react-bootstrap/Container";
 import Navbar from "react-bootstrap/Navbar";
+import { Link } from "react-router-dom";
 import {
   FaReact,
   FaAngular,
@@ -25,6 +26,7 @@ import {
   BackContent,
   BackIcons,
   Icon,
+  BackIcon,
 } from "./styled";
 
 import ImageFront from "../../images/front.jpg";
@@ -34,9 +36,14 @@ function ImgDeveloper() {
     <>
       <Navbar bg="dark" variant="dark">
         <Container>
-          <Navbar.Brand href="#home" Style={"color:#06f3af; font-weight:bold"}>
-            Tech Planets
-          </Navbar.Brand>
+          <Link Style={"text-decoration:none"}  to="/">
+            <Navbar.Brand
+              href="#home"
+              Style={"color:#06f3af; font-weight:bold; text-decoration:none"}
+            >
+              Tech Planets
+            </Navbar.Brand>
+          </Link>
         </Container>
       </Navbar>
       <FrontEnd>
@@ -82,12 +89,24 @@ function ImgDeveloper() {
             <span>Back-End</span> Developer
           </h1>
           <BackIcons>
-            <FaNodeJs size={70} />
-            <FaPhp size={70} />
-            <FaJava size={70} />
-            <FaPython size={70} />
-            <DiJavascript1 size={70} />
-            <DiRuby size={70} />
+            <BackIcon>
+              <FaNodeJs size={70} />
+            </BackIcon>
+            <BackIcon>
+              <FaPhp size={70} />
+            </BackIcon>
+            <BackIcon>
+              <FaJava size={70} />
+            </BackIcon>
+            <BackIcon>
+              <FaPython size={70} />
+            </BackIcon>
+            <BackIcon>
+              <DiJavascript1 size={70} />
+            </BackIcon>
+            <BackIcon>
+              <DiRuby size={70} />
+            </BackIcon>
           </BackIcons>
         </BackContent>
       </BackEnd>

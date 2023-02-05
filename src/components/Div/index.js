@@ -3,10 +3,11 @@ import styled from "styled-components";
 const Div = styled.div`
   background: #1a2b3d;
   width: 100%;
-  height: 85vh;
+  height: 100vh;
   position: absolute;
   display:flex;
   flex-direction: row;
+  justify-content: space-around;
 
   img{
     width:50%;

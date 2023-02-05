@@ -44,11 +44,8 @@ export const SecurityIcons = styled.div`
   height: 60%;
 `;
 
-// export const CustomNavbar = styled(Navbar)`
-//   display: flex;
-//   justify-content: space-around;
-//   align-items: center;
-//   width: 100%;
-//   height: 100%;
-//   height: 60%;
-// `;
+export const SecuryIcon = styled.span`
+  &:hover {
+    color: #ccc;
+  }
+`;

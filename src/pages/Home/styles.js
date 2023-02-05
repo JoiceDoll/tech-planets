@@ -1,14 +1,18 @@
 import styled from "styled-components";
 
+export const FixedPositionNav = styled.div`
+  width: 100%;
+  position: fixed;
+  z-index: 5;
+`;
 
 export const Content = styled.p`
   color: #ffff;
   font-size: 25px;
-  /* background:blue; */
   text-align: start;
-  margin-top: 5%;
-  margin-left: 10%;
-  font-family:Titillium Web;
+  margin-top: 15%;
+  margin-right: 10%;
+  font-family: Titillium Web;
 `;
 
 export const SecondContent = styled.div`
@@ -22,7 +26,7 @@ export const SecondContent = styled.div`
     text-align: start;
     margin: 18%;
     font-size: 30px;
-    font-family:Titillium Web;
+    font-family: Titillium Web;
   }
   span {
     color: #06f3af;
@@ -44,7 +48,7 @@ export const Carrer = styled.div`
   text-align: center;
   font-size: 20px;
   margin-top: 20%;
-  font-family:Titillium Web;
+  font-family: Titillium Web;
 
   h1 {
     color: #06f3af;
@@ -78,6 +82,15 @@ export const Courses = styled.h1`
   color: #fff;
   text-align: center;
   font-size: 20px;
-  margin-top: 5%;
   font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  margin-top: 5%;
+
+  p {
+    color: #06f3af;
+    font-family: Titillium Web;
+  }
+`;
+
+export const StyleButton = styled.div`
+  margin-top: -10%;
 `;
