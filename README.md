@@ -2,10 +2,15 @@
 ## Projeto para fins de estudo sobre React.JS
 
 Dependencies:
+<br>
 create-react-app;
+<br>
 react-router;
+<br>
 react-icons;
+<br>
 React-Bootstrap;
+<br>
 Yarn;
 
 
