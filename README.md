@@ -1,17 +1,15 @@
 # TECH PLANETS
 ## Projeto para fins de estudo sobre React.JS
+## Project for study purposes in react.js
 
 Dependencies:
-<br>
-create-react-app;
-<br>
-react-router;
-<br>
-react-icons;
-<br>
-React-Bootstrap;
-<br>
-Yarn;
+- create-react-app;
+- react-router;
+- react-icons;
+- React-Bootstrap;
+- Yarn;
+
+  *Use yarn start to run
 
 
 ![techPlanet home](https://user-images.githubusercontent.com/99621429/216841928-ae843507-29e9-4e72-bd03-9095497253ba.PNG)
