@@ -1,7 +1,5 @@
 import styled from "styled-components";
 
-// import { Navbar } from "react-bootstrap";
-
 export const Security = styled.div`
   margin-top: 8%;
   display: flex;

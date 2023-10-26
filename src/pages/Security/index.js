@@ -38,19 +38,15 @@ function SecurityPage() {
           </h1>
           <SecurityIcons>
             <SecuryIcon>
-              {" "}
               <SiVirtualbox size={70} />
             </SecuryIcon>
             <SecuryIcon>
-              {" "}
               <SiWireshark size={70} />
             </SecuryIcon>
             <SecuryIcon>
-              {" "}
               <GiHydra size={70} />
             </SecuryIcon>
             <SecuryIcon>
-              {" "}
               <SiKalilinux size={70} />
             </SecuryIcon>
           </SecurityIcons>

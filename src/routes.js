@@ -15,8 +15,8 @@ export default function Router() {
         <Route path="/" element={<Home />} />
         <Route path="/cursos" element={<Cursos />} />
         <Route path="/developer" element={<Developer />} />
-        <Route path = "/security" element={<Secutiry/>}/>
-        <Route path = "/database" element={<Database/>}/>
+        <Route path="/security" element={<Secutiry />} />
+        <Route path="/database" element={<Database />} />
       </Routes>
     </BrowserRouter>
   );
